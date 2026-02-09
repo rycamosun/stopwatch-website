@@ -28,9 +28,10 @@ startBtn.addEventListener('click', () => {
 			hour += 1;
 		}
 
-		hourDisplay.textContent = hour < 10 ? `0${hour}` : hour;
-		minuteDisplay.textContent = minute < 10 ? `0${minute}` : minute;
-		secondDisplay.textContent = second < 10 ? `0${second}` : second;
+		const padding = 10;
+		hourDisplay.textContent = hour < padding ? `0${hour}` : hour;
+		minuteDisplay.textContent = minute < padding ? `0${minute}` : minute;
+		secondDisplay.textContent = second < padding ? `0${second}` : second;
 	}, timeout);
 })
 
