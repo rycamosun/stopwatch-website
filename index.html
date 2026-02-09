@@ -3,14 +3,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Stop Watch</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
           crossorigin="anonymous">
 </head>
 <body>
-<h1 class="text-center">Hello, world!</h1>
+<div class="container text-center">
+    <h1 class="text-danger">Stop Watch</h1>
+    <span class="fs-2" id="hour">00</span>
+    <span class="fs-2" id="minute">00</span>
+    <span class="fs-2" id="second">00</span>
+</div>
+<div class="container text-center">
+    <button id="start" class="btn btn-dark">Start</button>
+    <button id="stop" class="btn btn-dark">Stop</button>
+    <button id="reset" class="btn btn-dark">Reset</button>
+</div>
 <script src="index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
